@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Life</title>
+        <meta charset="utf-8" />
+        <style>
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    overflow: hidden;
+}
+
+html, body, canvas, div {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+}
+
+html, body, canvas {
+    top: 0;
+}
+
+html, body {
+    bottom: 0;
+}
+
+canvas {
+    bottom: 40px;
+    overflow: hidden;
+}
+
+div {
+    width: 100%;
+    bottom: 0;
+    z-index: 10;
+    height: 40px;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: white;
+    border-top: 1px solid black;
+}
+
+        </style>
+    </head>
+    <body>
+        <canvas></canvas>
+        <div>
+            <button id="step">Step</button>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
